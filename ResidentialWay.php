@@ -10,12 +10,9 @@ final class ResidentialWay extends Highway
     
     public function addVehicle(Vehicle $vehicle)
     {
-        if ($vehicle instanceof Bicycle || $vehicle instanceof Skateboard) {
-            return 'This type of vehicle is not authorized on this type of highway';
-        } else {
-            $this->setCurrentVehicle($vehicle);
-        }
+         $this->setCurrentVehicle($vehicle);
     }
-}
+    }
+
 
 ?> 
