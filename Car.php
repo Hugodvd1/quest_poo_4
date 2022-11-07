@@ -1,6 +1,7 @@
 <?php
 
 require_once 'Vehicle.php';
+require_once 'LighteableInterface.php';
 
 class Car extends Vehicle
 {
@@ -31,6 +32,16 @@ class Car extends Vehicle
         }
     }
 
+
+    public function switchof(): bool
+	{
+		return false;
+	}
+
+	public function switchOn(): bool
+	{
+		return true;
+	}
 
     // Getter & Setter 
 

@@ -10,8 +10,6 @@ final class MotorWay extends Highway
     {
         if (!($vehicle instanceof Bike) || !($vehicle instanceof Skateboard)){
             $currentVehicles[] = $vehicle;
-            return 'This type of vehicle is not authorized on this type of highway';
-
         }
     }
 }
