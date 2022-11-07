@@ -25,7 +25,7 @@ class Car extends Vehicle
     
     public function start(): string
     {
-        if ($this->hasParkBrake === true) {
+        if ($this->sethasParkBrake === true) {
             throw new Exception('impossible de partir lors l\'activation du frein a main ' . PHP_EOL);
         } else {
             return 'Lets go !' . PHP_EOL;
@@ -81,12 +81,14 @@ class Car extends Vehicle
      *
      * @return  self
      */ 
-    public function setHasParkBraker($hasParkBraker)
+    public function setHasParkBraker($hasParkBraker): void
     {
         $this->hasParkBraker = $hasParkBraker;
 
-        return $this;
+        
     }
+
+
 }
 
 
