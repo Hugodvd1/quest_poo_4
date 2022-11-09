@@ -3,7 +3,7 @@
 require_once 'Vehicle.php';
 require_once 'LighteableInterface.php';
 
-class Car extends Vehicle
+class Car extends Vehicle implements LightableInterface
 {
 
     private string $energy;
@@ -33,7 +33,7 @@ class Car extends Vehicle
     }
 
 
-    public function switchof(): bool
+    public function switchoff(): bool
 	{
 		return false;
 	}

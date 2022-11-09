@@ -37,7 +37,7 @@ $nevada = new Car('yellow', 5, 'diesel');
 
 
 var_dump($renaultR21->switchOn());
-var_dump($nevada->switchof());
+var_dump($nevada->switchoff());
 
 
 

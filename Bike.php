@@ -4,7 +4,7 @@
 require_once 'Vehicle.php';
 require_once 'LighteableInterface.php';
 
-class Bike extends Vehicle
+class Bike extends Vehicle implements LightableInterface 
 {
 
     public function switchOff(): bool 
@@ -12,10 +12,10 @@ class Bike extends Vehicle
         return false;
     }
 
-public function switchOn() {
+public function switchOn(): bool {
     if ($this->getCurrentSpeed() > 10) {
         return true;
-    }
+    } 
     return false;
 }
 
